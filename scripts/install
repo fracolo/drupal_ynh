@@ -7,7 +7,7 @@
 #=================================================
 
 source _common.sh
-source ynh_add_swap
+# source ynh_add_swap
 source /usr/share/yunohost/helpers
 
 #=================================================
@@ -121,9 +121,9 @@ phpversion=$(ynh_app_setting_get --app=$app --key=phpversion)
 #=================================================
 # ADD SWAP
 #=================================================
-ynh_script_progression --message="Adding swap..."
+# ynh_script_progression --message="Adding swap..."
 
-ynh_add_swap --size=$swap_needed
+# ynh_add_swap --size=$swap_needed
 
 #=================================================
 # CREATE DRUSH ALIAS
